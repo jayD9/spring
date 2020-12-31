@@ -25,6 +25,7 @@ public class BootStrapData implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+        System.out.println("run method");
         Publisher penguin = new Publisher("Penguin Random House","131 Lake street","Jersey City","NJ","07306");
         publisherRepository.save(penguin);
 
